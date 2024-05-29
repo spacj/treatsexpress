@@ -1,0 +1,167 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.hero-bg{
+  background-image: url('pages/images/bgchero.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.food-bg{
+  background-image: url('pages/images/pizza_flight.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.colorbtn{
+  background-color: #f57af1e6;
+  border-radius: 90px;
+  padding:13px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+.slogan{
+  border-right: 5px solid black;
+}
+.whitebg{
+  background-image: url('pages/images/bgcwhite.jpg');
+}
+.bgMi{
+  background-image: url('pages/images/milano.jpg');
+}
+.carousel-card {
+  transition: opacity 0.5s;
+}
+
+.carousel-card:not(:first-child) {
+  opacity: 0.5;
+}
+
+
+.carousel-card:not(:last-child) {
+  opacity: 0.5;
+}
+
+.carousel-card.active {
+  opacity: 1;
+}
+.bibbi{
+  border-bottom: 1px solid #D4AF37;
+  padding-bottom: 1vh
+}
+div.dropdown-menu.show{
+  background-color: #fff0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+  border:none;
+}
+a.dropdown-item{
+  background-color: #f57af1e6;
+  border-radius: 90px;
+  padding:13px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 16vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 1vh;
+  bottom: 1vh;
+  left: 1.5vw;
+}
+button.dropdown-toggle:focus{
+  border: none
+}
+.dropdown-toggle.show{
+  border: none
+}
+.dropdown-item{
+  background-color: #f57af19a;
+}
+.bg-find{
+  background-image: url('pages/images/findit.jpg');
+  background-size: contain;
+}
+.navbar-toggler{
+  color: white
+}
+.bordino{
+  text-decoration: underline;
+  text-decoration-color: #D4AF37;
+  text-underline-offset: 6px;
+
+}
+h3.bordino{
+  text-underline-offset: 8px;
+
+}
+.dropdown-item svg{
+  background-color: #fff0;
+}
+.custom-dropdown-item span{
+  background-color: #fff0;
+
+}
+.custom-dropdown-item:hover{
+  background-color: #f57af19a;
+  color: white;
+
+}
+
+a.dropdown-item{
+  animation: open 0.5s ease-in-out;
+}
+a.dropdown-item.disable {
+  animation: slideIn 10s ease-in-out;
+}
+
+@keyframes open {
+  0% {
+    bottom: -3vh;
+    opacity: 0
+  }
+  100% {
+    opacity: 1;
+    bottom: 1vh;
+    left: 1.5vw;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 1;
+    bottom: 1vh;
+    left: 1.5vw;
+    bottom: -3vh;
+    opacity: 1
+  }
+  100% {
+    bottom: -8vh;
+    opacity: 1
+  }
+}
+a.navlink{
+  background-color: #f57af1e6;
+}
